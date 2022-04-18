@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Nav, Button } from "react-bootstrap";
 
 function Navigation(props: any) {
@@ -28,12 +27,19 @@ function Navigation(props: any) {
               <Nav.Link href="/minter">Minter</Nav.Link>
             </li>
             <li className="nav-item">
-              <Nav.Link href="/test">Testing</Nav.Link>
+              <Nav.Link href="/roadmap">Roadmap</Nav.Link>
+            </li>
+            <li className="nav-item">
+              <Nav.Link href="/how-to">How To</Nav.Link>
+            </li>
+            <li className="nav-item">
+              <Nav.Link href="/faq">FAQ</Nav.Link>
             </li>
           </ul>
           <div
             className="form-check form-switch mode-switch pe-lg-1 ms-lg-auto"
             data-bs-toggle="mode"
+            style={{ marginRight: "1em" }}
           >
             <input
               type="checkbox"

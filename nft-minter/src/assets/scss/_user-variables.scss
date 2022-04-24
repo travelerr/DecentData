@@ -1,4 +1,4 @@
-// 
+//
 // user-variables.scss
 // Use this to override Bootstrap and Finder variables
 //
@@ -6,3 +6,14 @@
 // Example of a variable override to change Finder background color
 // Remove the "//" to comment it in and see it in action!
 // $body-bg: #12263F;
+
+.background1 {
+  background-image: url(../img/home/background1.jpg);
+  background-position: "center";
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.background-gradient {
+  color: linear-gradient(#0f0a33, #131023);
+}

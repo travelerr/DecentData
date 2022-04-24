@@ -1,7 +1,9 @@
 import { Nav, Button } from "react-bootstrap";
+import Logo from "../assets/img/Logohorizontal.png";
 
 function Navigation(props: any) {
-  const { darkModeHandler, connectWalletPressed, walletAddress } = props;
+  const { darkModeHandler, connectWalletPressed, walletAddress, chainID } =
+    props;
 
   return (
     <header
@@ -11,8 +13,7 @@ function Navigation(props: any) {
       <div className="container-fluid pe-lg-4">
         <div className="d-flex align-items-center">
           <a href="/" className="navbar-brand flex-shrink-0 py-1 py-lg-2">
-            {/* <img src={"../assets/img/NFT.png"} width="47" alt="NFT.me" /> */}
-            ZToken.app
+            <img src={Logo} width="225" alt="Decent Data" />
           </a>
         </div>
         <div className="d-flex align-items-center w-100">
@@ -28,9 +29,6 @@ function Navigation(props: any) {
             </li>
             <li className="nav-item">
               <Nav.Link href="/roadmap">Roadmap</Nav.Link>
-            </li>
-            <li className="nav-item">
-              <Nav.Link href="/how-to">How To</Nav.Link>
             </li>
             <li className="nav-item">
               <Nav.Link href="/faq">FAQ</Nav.Link>
@@ -70,6 +68,13 @@ function Navigation(props: any) {
           >
             <span className="navbar-toggler-icon"></span>
           </Button>
+          <div style={{ marginRight: "1em", fontWeight: "700" }}>
+            {chainID === "0x1" ? "ETH" : ""}
+            {chainID === "0x3" ? "ROP" : ""}
+            {chainID === "0x4" ? "RINK" : ""}
+            {chainID === "0x5" ? "GOERLI" : ""}
+            {chainID === "0x2a" ? "KOVAN" : ""}
+          </div>
           <Button
             className="my-auto"
             id="walletButton"

@@ -4,6 +4,7 @@ import { connectWallet, getCurrentWalletConnected } from "./utils/interact";
 import Home from "./Home";
 import Minter from "./components/Minter";
 import Roadmap from "./components/Roadmap";
+import FAQ from "./components/FAQ";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
   const [darkModeEnabled, setDarkModeEnabled] = useState<boolean>(false);
   const [walletAddress, setWallet] = useState<string>("");
   const [status, setStatus] = useState<any>();
+  const [chainID, setChainID] = useState<string>("");
 
   useEffect(() => {
     async function fetchData() {
@@ -28,6 +30,7 @@ function App() {
       setStatus(status);
 
       addWalletListener();
+      detectChain();
     }
     fetchData();
   }, []);
@@ -41,6 +44,19 @@ function App() {
     setStatus(walletResponse.status);
     setWallet(walletResponse.address);
   };
+
+  async function detectChain() {
+    const cid = await (window as any).ethereum.request({
+      method: "eth_chainId",
+    });
+    setChainID(cid);
+
+    (window as any).ethereum.on("chainChanged", (_chainId: string) => {
+      //window.location.reload();
+      setChainID(_chainId);
+      console.log(_chainId);
+    });
+  }
 
   const addWalletListener = () => {
     if ((window as any).ethereum.request.ethereum) {
@@ -78,12 +94,14 @@ function App() {
             darkModeHandler={darkModeHandler}
             connectWalletPressed={connectWalletPressed}
             walletAddress={walletAddress}
+            chainID={chainID}
           />
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="minter" element={<Minter />} />
               <Route path="roadmap" element={<Roadmap />} />
+              <Route path="faq" element={<FAQ />} />
               <Route
                 path="*"
                 element={

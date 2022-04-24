@@ -1,0 +1,24 @@
+
+// TODO's
+fix all style={{}}'s
+Replace vendor icons with Font Awesome
+Remove refernces to Alchemy
+
+// IDEAS
+A gallery on how to view NFT's
+NFTs cant easily just be pulled up, we need to chnage that 
+Develop a pinning serivce like Pinata
+Create a CDN for clients?
+
+// ROADMAP
+Focus on website
+
+// INDUSTRIES
+ecommerce
+automotive
+realestate
+healthcare
+data storage 
+DNS
+Insurance
+Proof of Attendance

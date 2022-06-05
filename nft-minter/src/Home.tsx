@@ -88,31 +88,10 @@ function Home() {
             className="d-none d-md-block d-lg-none"
             style={{ marginTop: "-150px" }}
           ></div>
-          {/* Parallax (3D Tilt) gfx */}
-          <div
-            className="tilt-3d"
-            data-tilt
-            data-tilt-full-page-listening
-            data-tilt-max="12"
-            data-tilt-perspective="1200"
-          >
-            <img src={layer01} alt="Dashboard" />
-            <div className="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100">
-              <img src={layer02} alt="Cards" />
-            </div>
-          </div>
         </div>
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: "rgba(255,255,255,.05)" }}
-        ></div>
       </section>
       {/* <!-- Integrations --> */}
       <section className="mt-n1 mt-md-0 py-5 position-relative zindex-5">
-        <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ backgroundColor: "#ffffff0d" }}
-        ></div>
         <div className="container">
           <div className="row justify-content-center text-center pt-md-3 pb-4 py-lg-5 mb-1">
             <div className="col-xl-8 col-lg-9 col-md-10">

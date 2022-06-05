@@ -1,11 +1,11 @@
-# 📝 NFT Minter Tutorial Files
+# 📝 Decent Data Files
 
-This repository contains the starter files (`minter-starter-files`) and completed version (`nft-tutorial`) of Alchemy's [NFT Minter tutorial](https://docs.alchemyapi.io/alchemy/tutorials/nft-minter). 
+This repository contains the base files (`nft-minter`) to clone the Decent Data live site.
 
-## ℹ️ About the tutorial
+## ℹ️ About Decent Data
 
-In this beginner-level tutorial, we'll teach you how to connect your smart contract to your React dApp project by building an NFT Minter using Metamask and Web3. 
+The goal is to provide a free lost cost nft minter to everyone. Primarily used for businesses who can issue nfts to their customers orders as proof of ownership.
 
 ## 🤔 Note
 
-Neither the `minter-starter-files` nor the `nft-tutorial` have their `node_modules` folder. So before running `npm start` in your terminal to start the React project, you need to run `npm install` to download all the package dependencies.
+The minter is currenlty configured to Gnosis chain but can be reconfigured for other chains

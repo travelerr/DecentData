@@ -25,9 +25,6 @@ function Footer() {
               <Nav.Link href="/roadmap">Roadmap</Nav.Link>
             </li>
             <li className="nav-item">
-              <Nav.Link href="/how-to">How To</Nav.Link>
-            </li>
-            <li className="nav-item">
               <Nav.Link href="/faq">FAQ</Nav.Link>
             </li>
           </ul>
@@ -74,25 +71,19 @@ function Footer() {
           </div>
           <div className="d-flex justify-content-center pt-4 mt-lg-3">
             <a
-              href="#"
+              href="https://www.facebook.com/decentdata0x/"
               className="btn btn-icon btn-secondary btn-facebook mx-2"
             >
               <i className="bx bxl-facebook"></i>
             </a>
             <a
-              href="#"
-              className="btn btn-icon btn-secondary btn-instagram mx-2"
+              href="https://twitter.com/decentdata_0x"
+              className="btn btn-icon btn-secondary btn-twitter mx-2"
             >
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="btn btn-icon btn-secondary btn-twitter mx-2">
               <i className="bx bxl-twitter"></i>
             </a>
-            <a href="#" className="btn btn-icon btn-secondary btn-youtube mx-2">
-              <i className="bx bxl-youtube"></i>
-            </a>
             <a
-              href="https://discord.gg/CsQ96hZe"
+              href="https://discord.gg/RVTCvgA3"
               target="_blank"
               className="btn btn-icon btn-secondary btn-discord mx-2"
             >

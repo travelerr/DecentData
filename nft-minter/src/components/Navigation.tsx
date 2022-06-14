@@ -74,6 +74,7 @@ function Navigation(props: any) {
             {chainID === "0x4" ? "RINK" : ""}
             {chainID === "0x5" ? "GOERLI" : ""}
             {chainID === "0x2a" ? "KOVAN" : ""}
+            {chainID === "0x64" ? "GNOSIS" : ""}
           </div>
           <Button
             className="my-auto"

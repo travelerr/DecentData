@@ -134,7 +134,7 @@ function FAQ() {
                 data-bs-parent="#accordionAlt"
               >
                 <div className="accordion-body pt-0">
-                  At the moment, NFTs are static files stroed on the blockchain.
+                  At the moment, NFTs are static files stored on the blockchain.
                   This is true for Decent Data's NFT's and all other NFT's. Our
                   goal is to bring NFTs to life through 3D rendering allowing
                   any user who holds an NFT to access the represented object in

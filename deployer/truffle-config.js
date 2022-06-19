@@ -68,11 +68,7 @@ module.exports = {
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
     },
     xdai: {
-      provider: () =>
-        new HDWalletProvider(
-          key,
-          `https://dark-silent-meadow.xdai.quiknode.pro/c956caaa61f1d7a4c6290e876a27f4b2ec85f6c6`
-        ),
+      provider: () => new HDWalletProvider(key, `https://rpc.ankr.com/gnosis`),
       network_id: 100,
       gas: 30000000,
       gasPrice: 1000000000,

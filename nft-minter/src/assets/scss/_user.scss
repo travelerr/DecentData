@@ -1,3 +1,46 @@
 .jarallax {
-  background-image: url(../img/landing/digital-agency/hero-bg.svg);
+  background-image: url(../img/homepage/hero-bg.svg);
+}
+
+.text-gradient-primary path {
+  fill: url(#fa-icon-lg) !important;
+}
+
+.twitter-button {
+  i {
+    color: #1da1f2;
+  }
+  &:hover {
+    i {
+      color: #fff !important;
+    }
+    background-color: #1da1f2 !important;
+  }
+}
+
+.partner-swiper {
+  display: flex;
+  .swiper-slide {
+    width: 20%;
+  }
+  .swiper-slide a {
+    display: flex;
+    min-height: 225px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 725px) {
+  .partner-swiper {
+    display: flex;
+    flex-direction: column;
+    .swiper-slide {
+      width: 100%;
+    }
+    .swiper-slide a {
+      display: flex;
+      min-height: 225px;
+      justify-content: center;
+    }
+  }
 }

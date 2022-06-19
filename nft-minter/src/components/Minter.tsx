@@ -8,7 +8,8 @@ import {
 function Minter() {
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
-
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusURL, setStatusURL] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [url, setURL] = useState("");
@@ -20,11 +21,15 @@ function Minter() {
       setName("");
       setDescription("");
       setURL("");
+      var msg = status.split("Block Scout:")[0];
+      var msgUrl = status.split("Block Scout:")[1].trim();
+      setStatusMessage(status.split("Block Scout:")[0]);
+      setStatusURL(status.split("Block Scout:")[1].trim());
     }
   };
 
   return (
-    <section className="position-relative">
+    <section className="position-relative jarallax">
       <div className="position-relative zindex-4 pt-lg-3 pt-xl-5">
         <div className="container zindex-5 pt-5">
           <div className="row justify-content-center text-center pt-4 pb-sm-2 py-lg-5">
@@ -78,16 +83,33 @@ function Minter() {
                   </div>
                 </div>
               </form>
-              <button
-                type="submit"
-                onClick={onMintPressed}
-                className="btn btn-primary btn-lg shadow-primary mt-1"
-              >
-                Mint
-              </button>
-              <p id="status" className="mt-3 text-danger">
-                {status}
-              </p>
+              <div className="d-flex flex-column justify-content-center align-items-center">
+                <button
+                  type="submit"
+                  onClick={onMintPressed}
+                  className="btn btn-primary btn-lg shadow-primary mt-1 p-4"
+                  style={{ minWidth: "175px" }}
+                >
+                  Mint
+                </button>
+                {statusMessage && statusURL ? (
+                  <>
+                    <p className="mt-3 text-danger">{statusMessage}</p>
+                    <a
+                      id="status"
+                      href={statusURL}
+                      target="_blank"
+                      className="text-danger"
+                    >
+                      {statusURL}
+                    </a>
+                  </>
+                ) : (
+                  <p id="status" className="text-danger mt-3">
+                    {status}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

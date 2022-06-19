@@ -2,7 +2,7 @@ import React from "react";
 
 function FAQ() {
   return (
-    <section>
+    <section className="jarallax">
       <div className="pt-lg-3 pt-xl-5">
         <div className="container" style={{ minHeight: "100vh" }}>
           <div className="accordion" id="accordionAlt">

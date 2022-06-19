@@ -105,7 +105,7 @@ function App() {
               <Route
                 path="*"
                 element={
-                  <main style={{ padding: "1rem" }}>
+                  <main className="pt-5" style={{ padding: "1rem" }}>
                     <h1>There's nothing here!</h1>
                   </main>
                 }

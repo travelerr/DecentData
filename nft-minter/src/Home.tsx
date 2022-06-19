@@ -415,7 +415,8 @@ function Home() {
             {/* <!-- Item --> */}
             <div className="swiper-slide py-3">
               <a
-                href="#"
+                href="https://gnosis.io/"
+                target="_blank"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -430,7 +431,8 @@ function Home() {
             {/* <!-- Item --> */}
             <div className="swiper-slide py-3">
               <a
-                href="#"
+                href="https://ipfs.io/"
+                target="_blank"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -445,7 +447,8 @@ function Home() {
             {/* <!-- Item --> */}
             <div className="swiper-slide py-3">
               <a
-                href="#"
+                href="https://metamask.io/"
+                target="_blank"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -460,7 +463,8 @@ function Home() {
             {/* <!-- Item --> */}
             <div className="swiper-slide py-3">
               <a
-                href="#"
+                href="https://ramp.network/"
+                target="_blank"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -475,7 +479,8 @@ function Home() {
             {/* <!-- Item --> */}
             <div className="swiper-slide py-3">
               <a
-                href="#"
+                href="https://developers.gnosischain.com/for-users/get-xdai-tokens"
+                target="_blank"
                 className="card partner-card team-card card-body card-hover px-2 mx-2"
               >
                 <img

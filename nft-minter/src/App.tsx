@@ -99,7 +99,10 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="minter" element={<Minter />} />
+              <Route
+                path="minter"
+                element={<Minter walletAddress={walletAddress} />}
+              />
               <Route path="roadmap" element={<Roadmap />} />
               <Route path="faq" element={<FAQ />} />
               <Route

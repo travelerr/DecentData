@@ -105,7 +105,7 @@ function Minter(props: IMinterProps) {
             <div className="col-xl-7 col-md-8 offset-xl-1">
               <form className="needs-validation" noValidate>
                 <div className="col-sm-12 mb-4">
-                  <div>
+                  <div className="mb-4">
                     <h2>💾 Upload Your Data:</h2>
                     <div className="mb-3">
                       <input

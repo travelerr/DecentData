@@ -127,7 +127,7 @@ function Navigation(props: any) {
               data-bs-dismiss="offcanvas"
             ></button>
           </div>
-          <div className="d-flex">
+          <div className="d-none">
             <a
               href="../index.html"
               className="btn btn-outline-primary btn-sm fs-sm w-100 rounded me-2"

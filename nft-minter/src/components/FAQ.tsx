@@ -58,7 +58,7 @@ function FAQ() {
               >
                 <div className="accordion-body pt-0">
                   While you can use this contract on the Ethereum network, we
-                  reccomend our users use the{" "}
+                  recommend our users use the{" "}
                   <a href="https://gnosis.io/" target="_blank">
                     Gnosis Chain
                   </a>{" "}
@@ -81,7 +81,7 @@ function FAQ() {
                   aria-controls="collapseThree"
                   style={{ padding: "2rem 1.5rem" }}
                 >
-                  How can I view at my NFT?
+                  How can I view my NFT?
                 </button>
               </h3>
               <div

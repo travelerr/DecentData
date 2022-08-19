@@ -16,6 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./assets/vendor/boxicons/css/boxicons.min.css";
 import "./index.css";
+import GettingStarted from "./components/GettingStarted";
 
 function App() {
   const [darkModeEnabled, setDarkModeEnabled] = useState<boolean>(false);
@@ -99,6 +100,10 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route
+                path="getting-started"
+                element={<GettingStarted walletAddress={walletAddress} />}
+              />
               <Route
                 path="minter"
                 element={<Minter walletAddress={walletAddress} />}

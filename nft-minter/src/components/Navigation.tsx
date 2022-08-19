@@ -26,6 +26,9 @@ function Navigation(props: any) {
                 <Nav.Link href="/">Home</Nav.Link>
               </li>
               <li className="nav-item">
+                <Nav.Link href="/getting-started">Getting Started</Nav.Link>
+              </li>
+              <li className="nav-item">
                 <Nav.Link href="/minter">Minter</Nav.Link>
               </li>
               <li className="nav-item">

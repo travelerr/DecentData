@@ -45,10 +45,10 @@ function GettingStarted(props: IGettingStartedProps) {
             <span className="purple-text">Step 2:</span> Add Gnosis Chain to
             Metamask
           </h4>
-          <div className="d-flex justify-content-center mb-3">
+          <div className="d-flex justify-content-center mb-3 chainlink-card">
             <div className="card border-primary card-hover w-50">
               <div className="card-body">
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center chainlink-logo">
                   <img
                     style={{ width: "50px" }}
                     className="rounded"

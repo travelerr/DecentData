@@ -52,3 +52,17 @@
   width: 25px;
   content: "";
 }
+
+@media (max-width: 768px) {
+  .chainlink-card .card {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 481px) {
+  .chainlink-card .chainlink-logo {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}

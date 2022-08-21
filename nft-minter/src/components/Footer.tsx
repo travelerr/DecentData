@@ -5,11 +5,13 @@ import AppStoreDark from "../assets/img/icons/appstore-dark.svg";
 import GooglePlayLight from "../assets/img/icons/googleplay-light.svg";
 import GooglePlayDark from "../assets/img/icons/googleplay-dark.svg";
 import BuiltOnEthereum from "../assets/img/icons/built-on-eth.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
     <>
-      <footer className="footer pt-5 pb-4 pb-lg-5">
+      <footer className="footer pt-5 pb-4">
         <div className="container text-center pt-lg-3">
           <div className="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
             <img src={Logo} className="me-2" width="300" alt="decentdata" />
@@ -94,15 +96,20 @@ function Footer() {
               <i className="bx bxl-discord"></i>
             </a>
           </div>
+          <div className="pt-4">
+            <p className="m-0">
+              Made with <FontAwesomeIcon icon={faHeart} /> and{" "}
+              <FontAwesomeIcon icon={faCode} /> in Portland, Maine
+            </p>
+          </div>
         </div>
       </footer>
       <div className="eth-branding" style={{ backgroundColor: "#f7f7f7" }}>
-        {" "}
         <img
           src={BuiltOnEthereum}
           style={{ maxWidth: "150px" }}
           alt="Built on Ethereum"
-        />{" "}
+        />
       </div>
     </>
   );

@@ -19,6 +19,9 @@ function Footer() {
               <Nav.Link href="/">Home</Nav.Link>
             </li>
             <li className="nav-item">
+              <Nav.Link href="/getting-started">Getting Started</Nav.Link>
+            </li>
+            <li className="nav-item">
               <Nav.Link href="/minter">Minter</Nav.Link>
             </li>
             <li className="nav-item">
@@ -83,8 +86,9 @@ function Footer() {
               <i className="bx bxl-twitter"></i>
             </a>
             <a
-              href="https://discord.gg/RVTCvgA3"
+              href="https://discord.gg/YThfKzkEjc"
               target="_blank"
+              rel="noreferrer"
               className="btn btn-icon btn-secondary btn-discord mx-2"
             >
               <i className="bx bxl-discord"></i>

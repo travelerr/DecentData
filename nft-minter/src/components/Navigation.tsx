@@ -169,6 +169,12 @@ function Navigation(props: any) {
                   Home
                 </a>
                 <a
+                  href="/getting-started"
+                  className="list-group-item list-group-item-action border-0 py-2 px-4"
+                >
+                  Getting Started
+                </a>
+                <a
                   href="/minter"
                   className="list-group-item list-group-item-action border-0 py-2 px-4"
                 >

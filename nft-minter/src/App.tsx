@@ -29,14 +29,22 @@ function App() {
       const { address, status } = await getCurrentWalletConnected();
       setWallet(address);
       setStatus(status);
-
       addWalletListener();
       detectChain();
+      detectDarkModeOnLoad();
     }
     fetchData();
   }, []);
 
+  function detectDarkModeOnLoad(): void {
+    var lsdm = localStorage.getItem("theme");
+    if (lsdm === "dark") {
+      setDarkModeEnabled(true);
+    }
+  }
+
   const darkModeHandler = () => {
+    localStorage.setItem("theme", !darkModeEnabled ? "dark" : "");
     setDarkModeEnabled(!darkModeEnabled);
   };
 

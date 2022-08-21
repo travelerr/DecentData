@@ -55,7 +55,7 @@ function GettingStarted(props: IGettingStartedProps) {
                     alt="gnosis chain logo"
                     src={GnosisLogo}
                   />
-                  <h5 style={{ marginLeft: "0px;" }} className="mb-0">
+                  <h5 style={{ marginLeft: "0px" }} className="mb-0">
                     Gnosis Chain
                   </h5>
                 </div>

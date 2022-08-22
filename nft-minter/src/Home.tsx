@@ -12,6 +12,8 @@ import {
 import Lottie from "lottie-react";
 import AD from "./assets/json/logolottie.json";
 import EthGod from "./assets/img/homepage/team/eth-god.jpg";
+import ShopifyExample from "./assets/img/homepage/shopify-example.png";
+import ShopifyIcon from "./assets/img/homepage/shopify-icon.svg";
 import travelerrrrrrr from "./assets/img/homepage/team/travelerrrrrrr.jpg";
 import Gnosis from "./assets/img/partners/Gnosis.svg";
 import IPFS from "./assets/img/partners/IPFS.png";
@@ -38,6 +40,7 @@ function Home() {
                   <a
                     href="https://twitter.com/decentdata_0x"
                     target="_blank"
+                    rel="noreferrer"
                     className="btn btn-video btn-icon btn-lg flex-shrink-0 me-3 twitter-button stretched-link"
                   >
                     <i className="bx bxl-twitter"></i>
@@ -58,9 +61,9 @@ function Home() {
                     Mint Something Now
                   </a>
                   <p className="d-lg-block d-none mb-0 ps-md-3">
-                    Mint an NFT today for less than $0.01. Decent Data NFTs will
-                    allow users to bridge IRL purchases into the Metaverse with
-                    proof of purchase.
+                    Mint an NFT today for less than $0.01. Decent Data aims to
+                    serve as the backbone of future metaverse projects,
+                    providing meta data to all virtual and IRL objects.
                   </p>
                 </div>
               </div>
@@ -89,6 +92,76 @@ function Home() {
         </div>
       </section>
 
+      {/* Showcase */}
+      <section className="container py-3 py-md-4 py-lg-5 py-2 my-lg-2 my-xl-4">
+        <div className="row align-items-center">
+          <div
+            className="rellax col-md-7"
+            data-rellax-percentage="0.5"
+            data-rellax-speed="-0.6"
+            data-disable-parallax-down="lg"
+          >
+            <img
+              src={ShopifyExample}
+              className="d-block mx-auto rounded-3"
+              width="746"
+              alt="shopify example"
+            />
+          </div>
+          <div
+            className="rellax col-md-5 col-xl-4 offset-xl-1 d-flex d-sm-block flex-column"
+            data-rellax-percentage="0.5"
+            data-rellax-speed="0.8"
+            data-disable-parallax-down="lg"
+          >
+            <h2 className="pb-3 pt-2 pt-md-0">eCommerce Integration</h2>
+            <ul className="list-unstyled pb-2">
+              <li className="d-flex align-items-center pb-1 mb-2">
+                <i className="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Add to any ecommerce page
+              </li>
+              <li className="d-flex align-items-center pb-1 mb-2">
+                <i className="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Auto populate NFT image and meta data
+              </li>
+              <li className="d-flex align-items-center pb-1 mb-2">
+                <i className="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Track NFT history
+              </li>
+              <li className="d-flex align-items-center pb-1 mb-2">
+                <i className="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Verify user subscriptions and services
+              </li>
+              <li className="d-flex align-items-center pb-1 mb-2">
+                <i className="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Works with Shopify{" "}
+                <i
+                  style={{ marginLeft: "5px" }}
+                  className="fab fa-shopify mr-2"
+                ></i>
+              </li>
+            </ul>
+            <a
+              href="https://decent-data-test-store.myshopify.com/products/superman-action-figure"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                style={{
+                  color: "#92ba45",
+                  marginRight: "8px",
+                  fontSize: "25px",
+                }}
+                className="fab fa-shopify mr-2"
+              ></i>
+              Example
+              <i className="bx bx-right-arrow-alt fs-xl ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* <!-- Roadmap Sectors --> */}
       <section
         id="roadmap-sectors"
@@ -111,190 +184,171 @@ function Home() {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-sm-3 g-lg-4 pb-md-3 pb-lg-5">
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faStore}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p style={{ marginLeft: "1em" }}>eCommerce</p>
                 </div>
-                <p className="mb-0">
-                  Pair online merchandise sales as an NFT representation of the
-                  item. All its take is a single click at checkout for your
-                  customer.
-                </p>
+                <div className="card-body">
+                  <h3 className="h6 text-left">eCommerce</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Pair online merchandise sales as an NFT representation of
+                    the item. All its take is a single click at checkout for
+                    your customer.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faCar}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Automotive
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Automotive</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Provide your customers with an NFT representing ownership of
+                    their new car. Its authentic, immutable and transferrable.
                   </p>
                 </div>
-                <p className="mb-0">
-                  Provide your customers with an NFT representing ownership of
-                  their new car. Its authentic, immutable and transferrable.
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faBuilding}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Real Estate
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Real Estate</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Perfect for real estate agents. Offer you clients an NFT
+                    representing their new home. Plot, address, sq footage
                   </p>
                 </div>
-                <p className="mb-0">
-                  Perfect for real estate agents. Offer you clients an NFT
-                  representing their new home. Plot, address, sq footage
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faFileMedical}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Medical Records
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Medical Records</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Privacy? Not a problem. Keep personal medical records secure
+                    yet always accessible by ONLY you.
                   </p>
                 </div>
-                <p className="mb-0">
-                  Privacy? Not a problem. Keep personal medical records secure
-                  yet always accessible by ONLY you.
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faDatabase}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Big Data
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Data</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Working with large data? We can store it. By
+                    cryptographically hashing your data you can use a reverse
+                    algorithm to reproduce it exactly the way you want, knowing
+                    no chnages have been made to it.
                   </p>
                 </div>
-                <p className="mb-0">
-                  Working with large data? We can store it. By cryptographically
-                  hashing your data you can use a reverse algorithm to reproduce
-                  it exactly the way you want, knowing no chnages have been made
-                  to it.
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faWifi}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left"> DNS</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Prove website ownership with a decentralized record of your
                     DNS
                   </p>
                 </div>
-                <p className="mb-0">
-                  Prove website ownership with a decentralized record of your
-                  DNS
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faCarCrash}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Insurance
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Insurance</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Keep your insurance records secure, accessible and provable
                   </p>
                 </div>
-                <p className="mb-0">
-                  Keep your insurance records secure, accessible and provable
-                </p>
               </div>
             </div>
 
             {/* <!-- Item --> */}
             <div className="col">
-              <div className="card card-body card-hover bg-light border-0">
-                <div className="d-flex justify-content-center">
+              <div className="card h-100 card-hover bg-light border-0">
+                <div className="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
                   <FontAwesomeIcon
                     icon={faAddressCard}
-                    className="d-block mb-4 text-gradient-primary"
-                    style={{ fontSize: "50px" }}
+                    className="bx bxl-bootstrap fs-2 text-gradient-primary"
+                    style={{ padding: ".375rem" }}
                     width="56"
                   />
-                  <p
-                    style={{ marginLeft: "1em" }}
-                    className="text-gradient-primary"
-                  >
-                    Proof of Attendance
+                </div>
+                <div className="card-body">
+                  <h3 className="h6 text-left">Proof of Attendance</h3>
+                  <p className="fs-sm mb-0 text-left">
+                    Provide event attendess a custom NFT as proof they were
+                    there - conferences, concerts and sporting events
                   </p>
                 </div>
-                <p className="mb-0">
-                  Provide event attendess a custom NFT as proof they were there
-                  - conferences, concerts and sporting events
-                </p>
               </div>
             </div>
           </div>
@@ -327,7 +381,7 @@ function Home() {
                 </div>
               </div>
               <div className="card-img">
-                <img src={EthGod} className="rounded-3" alt="Image" />
+                <img src={EthGod} className="rounded-3" alt="eth god images" />
               </div>
             </a>
           </div>
@@ -348,7 +402,11 @@ function Home() {
                 </div>
               </div>
               <div className="card-img">
-                <img src={travelerrrrrrr} className="rounded-3" alt="Image" />
+                <img
+                  src={travelerrrrrrr}
+                  className="rounded-3"
+                  alt="travelerrrrrrr"
+                />
               </div>
             </a>
           </div>
@@ -417,6 +475,7 @@ function Home() {
               <a
                 href="https://gnosis.io/"
                 target="_blank"
+                rel="noreferrer"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -433,6 +492,7 @@ function Home() {
               <a
                 href="https://ipfs.io/"
                 target="_blank"
+                rel="noreferrer"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -449,6 +509,7 @@ function Home() {
               <a
                 href="https://metamask.io/"
                 target="_blank"
+                rel="noreferrer"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -465,6 +526,7 @@ function Home() {
               <a
                 href="https://ramp.network/"
                 target="_blank"
+                rel="noreferrer"
                 className="card partner-card card-body card-hover px-2 mx-2"
               >
                 <img
@@ -481,6 +543,7 @@ function Home() {
               <a
                 href="https://developers.gnosischain.com/for-users/get-xdai-tokens"
                 target="_blank"
+                rel="noreferrer"
                 className="card partner-card team-card card-body card-hover px-2 mx-2"
               >
                 <img

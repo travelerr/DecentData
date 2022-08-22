@@ -104,7 +104,10 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="eth-branding" style={{ backgroundColor: "#f7f7f7" }}>
+      <div
+        className="eth-branding text-center"
+        style={{ backgroundColor: "#f7f7f7" }}
+      >
         <img
           src={BuiltOnEthereum}
           style={{ maxWidth: "150px" }}

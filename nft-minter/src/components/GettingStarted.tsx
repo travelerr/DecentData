@@ -28,7 +28,7 @@ function GettingStarted(props: IGettingStartedProps) {
     });
   }
   return (
-    <section className="jarallax" style={{ minHeight: "100vh" }}>
+    <section className="jarallax text-center" style={{ minHeight: "100vh" }}>
       <div className="pt-5 pt-lg-3 pt-xl-5">
         <div className="container" style={{ minHeight: "100vh" }}>
           <h4>

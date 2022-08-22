@@ -63,7 +63,10 @@ function Navigation(props: any) {
               </label>
             </div>
             <div className="hide-under-767">
-              <div style={{ marginRight: "1em", fontWeight: "700" }}>
+              <div
+                style={{ marginRight: "1em", fontWeight: "700" }}
+                className="text-center"
+              >
                 {chainID === "0x1" ? "ETH" : ""}
                 {chainID === "0x3" ? "ROP" : ""}
                 {chainID === "0x4" ? "RINK" : ""}
@@ -197,9 +200,12 @@ function Navigation(props: any) {
           </div>
           <div className="swiper-scrollbar end-0"></div>
         </div>
-        <div className="offcanvas-footer border-top d-flex justify-content-center">
+        <div className="offcanvas-footer border-top d-flex justify-content-center text-center">
           <div>
-            <div style={{ marginRight: "1em", fontWeight: "700" }}>
+            <div
+              style={{ marginRight: "1em", fontWeight: "700" }}
+              className="text-center"
+            >
               {chainID === "0x1" ? "ETH" : ""}
               {chainID === "0x3" ? "ROP" : ""}
               {chainID === "0x4" ? "RINK" : ""}

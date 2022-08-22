@@ -140,6 +140,7 @@ function Home() {
                   className="fab fa-shopify mr-2"
                 ></i>
               </li>
+              Password: web3
             </ul>
             <a
               href="https://decent-data-test-store.myshopify.com/products/superman-action-figure"

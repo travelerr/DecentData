@@ -22,7 +22,7 @@ function Roadmap() {
     },
     {
       title: "Shopify Web3 Checkout Integration",
-      date: "",
+      date: "August 2022",
       completed: "true",
       body: "Feature is currently built, awaiting public access",
     },

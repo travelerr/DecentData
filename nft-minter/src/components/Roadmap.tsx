@@ -16,9 +16,15 @@ function Roadmap() {
     },
     {
       title: "Getting Started Page",
-      date: "",
-      completed: "false",
+      date: "August 2022",
+      completed: "true",
       body: "Make it easy for users to understand and use this tool",
+    },
+    {
+      title: "Shopify Web3 Checkout Integration",
+      date: "",
+      completed: "true",
+      body: "Feature is currently built, awaiting public access",
     },
     {
       title: "Wallet and Test Token Distribution (Faucet)",
@@ -27,10 +33,10 @@ function Roadmap() {
       body: "Utilize account verification via Twitter to generate wallets for uses preconfigured to Gnosis chain with test tokens.",
     },
     {
-      title: "Shopify Web3 Checkout Integration",
+      title: "Real Estate Solution",
       date: "",
       completed: "false",
-      body: "Feature is currently built, awaiting public access",
+      body: "We're actively working on bringing verified, immutable, real estate ownership to NFTs",
     },
   ];
   return (
